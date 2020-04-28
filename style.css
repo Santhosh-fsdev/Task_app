@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right top, #ff685b, #ff8649, #ffa53c, #f4c43a, #e1e14b);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.flex-container{ 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-container > .header{
+    padding-top: 20vh;
+    text-align: center;
+}
+.flex-container > .input{
+    position: relative;
+    padding-top: 5rem;
+    display: flex;
+    
+}
+.flex-container > .input >.icon{
+    font-size: 1.5rem;
+}
+.flex-container > .input >.icon{
+    padding:12px;
+    height: 3rem;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+}
+.flex-container > .input >.icon > .btn{
+    outline: none;
+    border: none;
+    padding:none;   
+    font-size: 1.5rem;
+    background-color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.flex-container > .input >.icon > .btn > .fa{
+    color: #e3eb55;
+}
+
+.todo-input{
+    -webkit-appearance: none;
+    outline: none;
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    
+}
+
+.todo-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+}
+.todo-ul{
+    min-width: 30%;
+    list-style: none;
+}
+.todo{
+    margin: 0.5rem;
+    background: #fff;
+    color: black;
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+}
+.todo li{
+    flex:1
+} 
+.todo-item{
+    padding:0rem 0.5rem;
+}
+.complete{
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    background-color: #61d867;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+    
+}
+.delete{
+    outline: none;
+    border: none;
+    font-size:1rem;
+    background-color:#f36e39;
+    cursor: pointer;
+    width: 3rem;
+    height: 3rem;
+    
+}
+.complete > .fa, .delete > .fa{
+    pointer-events: none;
+}
+
+
+.completed{
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+.fall{
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+
+}
